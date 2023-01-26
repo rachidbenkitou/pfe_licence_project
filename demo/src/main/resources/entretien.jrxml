@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Simple_Blue" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3b4e9526-d241-4211-85d3-885d2599d67b">
+
+    <field name="type" class="java.lang.String">
+
+    </field>
+    <field name="date" class="java.lang.String">
+
+    </field>
+    <field name="etat" class="java.lang.String">
+
+    </field>
+    <field name="equipement" class="java.sql.String">
+
+    </field>
+    <field name="responsable" class="java.lang.String">
+
+    </field>
+    <field name="operateur" class="java.lang.String">
+
+    </field>
+    <background>
+        <band/>
+    </background>
+    <title>
+        <band height="72">
+            <frame>
+                <reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="a5559186-3795-410c-9755-a10ccefadf54"/>
+                <staticText>
+                    <reportElement x="210" y="35" width="234" height="43" forecolor="#FFFFFF" uuid="684b5f81-d92c-42d5-8231-c2a355fc890e"/>
+                    <textElement>
+                        <font size="34" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[Entretiens]]></text>
+                </staticText>
+                <image>
+                    <reportElement x="0" y="0" width="120" height="92" uuid="f43819d3-aa28-40a2-90fd-36dcb36f4844"/>
+                    <imageExpression><![CDATA["C:/Users/HP/Desktop/aatlogo.png"]]></imageExpression>
+                </image>
+            </frame>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="13"/>
+    </pageHeader>
+    <columnHeader>
+        <band height="25">
+            <line>
+                <reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="a8840642-b718-4e37-8c0b-f4633f487d9a"/>
+            </line>
+            <staticText>
+                <reportElement mode="Opaque" x="0" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="1a1cb96a-a29d-4c87-9476-9aaaf78fa691">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5beb43c6-e7a2-4038-ab3c-106b83b1b3ec"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Type]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="92" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="6547070c-e375-4f7b-a2c6-ce336efa6640">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="31a0c4fe-38d6-4311-87ed-9fb285e68a21"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Date]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="184" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="7ffc2179-b67a-4e3a-9f58-7e4742c4d487">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="27d415b4-751f-4b76-a7f7-be8995885318"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Etat]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="276" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="284f14bf-131b-4afa-b3f9-d11be0b11a49">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7b6a4ea3-a2f6-4e0a-b002-26115ffde612"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Equipement]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="368" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="b00a2cee-dbb5-4118-8555-8f1c341b4b98">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="93b9df45-cee2-4346-b33c-3d95f08804a4"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Responsable]]></text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="460" y="0" width="92" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="25dee3d7-c61a-4001-849e-c09bcc294a19">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="be5c9aa4-8b52-4269-a6c1-a957489fff79"/>
+                </reportElement>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Operateur]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="20">
+            <line>
+                <reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="05cf0341-3b85-46b7-896f-ea0a59c6274f"/>
+            </line>
+            <textField textAdjust="StretchHeight">
+                <reportElement x="0" y="0" width="92" height="20" uuid="64e36c9e-0292-46a8-b2bd-d3246d97cb2e">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5beb43c6-e7a2-4038-ab3c-106b83b1b3ec"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+            </textField>
+            <textField textAdjust="StretchHeight">
+                <reportElement x="92" y="0" width="92" height="20" uuid="56352429-46e9-44cb-9a89-32828df8c450">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="31a0c4fe-38d6-4311-87ed-9fb285e68a21"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+            </textField>
+            <textField textAdjust="StretchHeight">
+                <reportElement x="184" y="0" width="92" height="20" uuid="51a20f69-c9dd-461e-ad45-523ebd403e72">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="27d415b4-751f-4b76-a7f7-be8995885318"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{etat}]]></textFieldExpression>
+            </textField>
+            <textField textAdjust="StretchHeight">
+                <reportElement x="276" y="0" width="92" height="20" uuid="4c7e6303-ddce-493a-afdf-f1a291bf2753">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7b6a4ea3-a2f6-4e0a-b002-26115ffde612"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{equipement}]]></textFieldExpression>
+            </textField>
+            <textField textAdjust="StretchHeight">
+                <reportElement x="368" y="0" width="92" height="20" uuid="b0e8ef8a-e640-4f27-a240-f2728c9f79b7">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="93b9df45-cee2-4346-b33c-3d95f08804a4"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{responsable}]]></textFieldExpression>
+            </textField>
+            <textField textAdjust="StretchHeight">
+                <reportElement x="460" y="0" width="92" height="20" uuid="255d07ab-d51e-4128-81e9-dcfa7a625529">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="be5c9aa4-8b52-4269-a6c1-a957489fff79"/>
+                </reportElement>
+                <textElement>
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{operateur}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <columnFooter>
+        <band/>
+    </columnFooter>
+    <pageFooter>
+        <band height="17">
+            <textField>
+                <reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="245de669-1964-4b7f-94f1-70c830315740"/>
+                <textElement textAlignment="Right"/>
+                <textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+            </textField>
+            <textField evaluationTime="Report">
+                <reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="80d5c0f8-53ab-4ff0-9ea9-beb9dbccb3b1"/>
+                <textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+            </textField>
+            <textField pattern="EEEEE dd MMMMM yyyy">
+                <reportElement x="0" y="4" width="100" height="13" uuid="b50a430a-9694-431b-aa11-ac622f9c52cd"/>
+                <textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageFooter>
+    <summary>
+        <band/>
+    </summary>
+</jasperReport>
